@@ -1,0 +1,318 @@
+.slidev-layout.oadp-slide {
+  --ink: #242522;
+  --muted: #66645b;
+  --accent: #a84b32;
+  --coral-surface: #f2d8c9;
+  --gray-surface: #e9e6df;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  color: var(--ink);
+  background: #f6f2ea;
+  background-image: radial-gradient(#ddd5c577 0.7px, transparent 0.7px);
+  background-size: 22px 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1.4;
+}
+.oadp-slide .deck-header,
+.oadp-slide .deck-footer {
+  position: absolute;
+  left: 64px;
+  right: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.oadp-slide .deck-header {
+  top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+.oadp-slide .chapter {
+  color: var(--accent);
+}
+.oadp-slide .deck-footer {
+  bottom: 23px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.oadp-slide .slide-content {
+  padding: 92px 64px 180px;
+}
+.oadp-slide h1 {
+  margin: 0 0 14px;
+  font-size: 62px;
+  line-height: 1.06;
+  letter-spacing: -2.7px;
+  font-weight: 750;
+}
+.oadp-slide h2 {
+  font-size: 31px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.oadp-slide h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.oadp-slide p {
+  margin: 0;
+}
+.oadp-slide .accent {
+  color: var(--accent);
+}
+.oadp-slide .lede {
+  color: var(--muted);
+  font-size: 25px;
+  margin: 14px 0 20px;
+}
+.oadp-slide .small {
+  color: var(--muted);
+  font-size: 21px;
+  margin-top: 16px;
+}
+.oadp-slide .tiny {
+  font-size: 17px;
+}
+.oadp-slide .eyebrow {
+  display: block;
+  font-size: 17px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.oadp-slide .cards {
+  display: grid;
+  gap: 22px;
+  margin-top: 20px;
+}
+.oadp-slide .two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.oadp-slide .three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.oadp-slide .four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.oadp-slide .card {
+  padding: 20px;
+  border: 2px solid #c6c2b9;
+  border-radius: 17px;
+  background: var(--gray-surface);
+}
+.oadp-slide .card.coral {
+  border-color: #ad5037;
+  background: var(--coral-surface);
+}
+.oadp-slide .card.white {
+  background: #fffdf8;
+  border-color: #ddd4c5;
+}
+.oadp-slide .card p {
+  font-size: 23px;
+  line-height: 1.4;
+}
+.oadp-slide .four .card p {
+  font-size: 22px;
+}
+.oadp-slide .card ul {
+  margin: 10px 0 0;
+  padding-left: 24px;
+}
+.oadp-slide .card li {
+  margin: 6px 0;
+  font-size: 24px;
+}
+.oadp-slide .strip {
+  padding: 13px 23px;
+  border: 2px solid #c6c2b9;
+  border-radius: 14px;
+  background: var(--gray-surface);
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.oadp-slide .flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.oadp-slide .arrow {
+  color: var(--accent);
+  font-size: 40px;
+  font-weight: 700;
+}
+.oadp-slide .code-sample {
+  margin: 12px 0 0;
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  font:
+    24px/1.4 "Courier New",
+    monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.oadp-slide code {
+  background: #2425220a;
+  color: inherit;
+  border-radius: 4px;
+  padding: 0 5px;
+  font-size: 0.88em;
+}
+.oadp-slide a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border: 0;
+}
+.oadp-slide a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+.oadp-slide .source-path {
+  display: block;
+  margin-top: 18px;
+  font:
+    19px/1.5 "Courier New",
+    monospace;
+  overflow-wrap: anywhere;
+}
+.oadp-slide .clawd-note {
+  position: absolute;
+  left: 57px;
+  right: 64px;
+  bottom: 64px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.oadp-slide .note-mascot {
+  flex: 0 0 122px;
+  width: 122px;
+  min-width: 0;
+  max-width: 122px;
+}
+.oadp-slide .clawd-note p {
+  padding: 17px 25px;
+  border: 2px solid #ddd4c5;
+  border-radius: 19px;
+  background: #fff;
+  font-size: 26px;
+  line-height: 1.35;
+  flex: 1;
+}
+.oadp-slide .hero {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  align-items: center;
+  gap: 45px;
+  margin-top: 32px;
+}
+.oadp-slide .hero h1 {
+  font-size: 87px;
+  letter-spacing: -4px;
+  line-height: 1;
+}
+.oadp-slide .hero-mascot {
+  width: 250px;
+}
+.oadp-slide .hero .lede {
+  margin-top: 26px;
+  font-size: 28px;
+}
+.oadp-slide .pill {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid #b6b0a4;
+  border-radius: 9px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #e6e1d7;
+}
+.oadp-slide table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 24px;
+}
+.oadp-slide th {
+  text-align: left;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 12px 19px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.oadp-slide td {
+  border-top: 1px solid #c6c2b9;
+  padding: 14px 19px;
+}
+.oadp-slide .installer-row {
+  background: var(--coral-surface);
+}
+.oadp-slide .runtime-row {
+  background: var(--gray-surface);
+}
+.oadp-slide .checklist {
+  display: grid;
+  gap: 11px;
+  margin-top: 22px;
+}
+.oadp-slide .checklist > div {
+  padding: 10px 21px;
+  border-left: 5px solid #ad5037;
+  background: #fffdf8;
+  display: flex;
+  gap: 22px;
+  align-items: baseline;
+}
+.oadp-slide .checklist strong {
+  min-width: 275px;
+}
+.oadp-slide .checklist span {
+  color: var(--muted);
+}
+.oadp-slide .references {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+.oadp-slide .references a {
+  padding: 14px 22px;
+  background: #fffdf8;
+  border: 1px solid #ddd4c5;
+  border-radius: 13px;
+  font-size: 23px;
+}
+.oadp-slide .references small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 18px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .slidev-vclick-target {
+    transition: none !important;
+  }
+}
+@media (forced-colors: active) {
+  .oadp-slide .card,
+  .oadp-slide .strip,
+  .oadp-slide .clawd-note p {
+    border: 2px solid CanvasText;
+  }
+}

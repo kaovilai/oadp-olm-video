@@ -1,21 +1,29 @@
 {
   "name": "oadp-olm-video",
   "version": "1.0.0",
-  "description": "My Remotion video",
-  "repository": {},
+  "description": "OADP AllNamespaces and disconnected installation: a Slidev presentation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaovilai/oadp-olm-video.git"
+  },
   "license": "UNLICENSED",
   "engines": {
-    "node": "^20.19.0 || ^22.13.0 || >=24"
+    "node": ">=22.13.0"
   },
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.536",
+    "@remotion/transitions": "4.0.536",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.536"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.536",
+    "@slidev/cli": "53.0.0",
+    "@slidev/theme-default": "0.25.0",
+    "vite": "8.3.4",
+    "vue": "3.5.44",
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
     "eslint": "10.12.0",
@@ -23,10 +31,16 @@
     "typescript": "5.9.3"
   },
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion bundle",
-    "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "dev": "slidev slides.md --port 3030",
+    "build": "slidev build slides.md --base /oadp-olm-video/ --without-notes",
+    "preview": "vite preview --base /oadp-olm-video/ --host 127.0.0.1 --port 4173",
+    "lint": "eslint src && tsc && prettier --check components layouts styles .github/workflows/pages.yml",
+    "video:dev": "remotion studio",
+    "video:build": "remotion bundle",
+    "video:upgrade": "remotion upgrade"
+  },
+  "overrides": {
+    "dompurify": "3.4.17"
   },
   "allowScripts": {
     "esbuild": false
